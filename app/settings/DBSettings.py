@@ -1,22 +1,34 @@
 import os
 import sqlite3
-from sqlite3 import Connection
-from typing import Any, Generator
 
 DATABASE_DIR = os.getcwd() + "/database/"
 
 class DBManager:
-    @staticmethod
-    def get_connection() -> Generator[Connection, Any, None]:
-        with sqlite3.connect('Expenses_database.sqlite') as con:
-            yield con
 
     @staticmethod
-    def check_connection(con: Connection) -> None:
-        pass
+    def db_transactions_query(func):
+        def called(*args, **kwargs):
+            with sqlite3.connect(DATABASE_DIR + 'Expenses_database.sqlite') as con:
+                result = func(con=con, *args, **kwargs)
+                return result
+        return called
 
     @staticmethod
-    def close_connection(con: Connection) -> None:
-        con.commit()
-        con.close()
+    def check_connection() -> bool:
+        try:
+            con = sqlite3.connect(DATABASE_DIR + 'Expenses_database.sqlite')
+            query = """
+                SELECT 1
+                FROM financial_transactions_test;
+            """
+
+            con.execute(query)
+            con.commit()
+            con.close()
+
+            return True
+
+        except Exception as err:
+            print(err)
+            return False
 
