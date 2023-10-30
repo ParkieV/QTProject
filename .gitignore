@@ -1,0 +1,6 @@
+# Python venv
+*env/
+# Python files
+*__pycache__*/
+# logger files
+*.log
