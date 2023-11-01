@@ -8,7 +8,7 @@ sys.path.append(os.getcwd())
 from app.methods.validate_query import validate_query_values
 from app.settings.DBSettings import DBManager
 
-TABLE_NAME = "financial_transactions_test"
+TABLE_NAME = "financial_transactions"
 
 @DBManager.db_transactions_query
 @validate_query_values
