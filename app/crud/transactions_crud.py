@@ -8,13 +8,13 @@ sys.path.append(os.getcwd())
 from app.methods.validate_query import validate_query_values
 from app.settings.DBSettings import DBManager
 
-DB_NAME = "financial_transactions_test"
+TABLE_NAME = "financial_transactions_test"
 
 @DBManager.db_transactions_query
 @validate_query_values
 def add_row(values: dict, con: Connection | None = None) -> int:
     query = f"""
-            INSERT into {DB_NAME}
+            INSERT into {TABLE_NAME}
                 ({", ".join(values)})
             VALUES
                 ({", ".join(map(str, values.values()))})
@@ -31,7 +31,7 @@ def add_row(values: dict, con: Connection | None = None) -> int:
 def get_row_by_id(id: int, con: Connection | None = None) -> dict:
     query = f"""
         SELECT *
-        FROM {DB_NAME}
+        FROM {TABLE_NAME}
         WHERE transaction_id = {id};
     """
     logging.info(f"SQL query is {query}")
@@ -45,7 +45,7 @@ def get_row_by_id(id: int, con: Connection | None = None) -> dict:
 @validate_query_values
 def update_row_by_id(values: dict, id: int, con: Connection | None = None) -> int:
     query = f"""
-            UPDATE {DB_NAME}
+            UPDATE {TABLE_NAME}
                 SET {", ".join(map(lambda k: f"{k} = {values[k]}", values))}
             WHERE transaction_id = {id}
             RETURNING transaction_id;
@@ -60,7 +60,7 @@ def update_row_by_id(values: dict, id: int, con: Connection | None = None) -> in
 @DBManager.db_transactions_query
 def delete_row_by_id(id: int, con: Connection | None = None) -> None:
     query = f"""
-        DELETE from {DB_NAME}
+        DELETE from {TABLE_NAME}
         WHERE transaction_id = {id};
     """
     if con:
