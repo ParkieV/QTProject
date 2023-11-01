@@ -6,8 +6,8 @@ from PyQt5.QtWidgets import QMainWindow
 
 from app.settings.DBSettings import DATABASE_DIR
 from app.settings.UISettings import UI_SRC_DIR
-from app.UI.ExpensesWindow import ExpensesWindow
-from app.UI.GraphicsWindow import GraphicsWindow
+from app.UI.windows.ExpensesWindow import ExpensesWindow
+from app.UI.windows.GraphicsWindow import GraphicsWindow
 
 
 class DatabaseWindow(QMainWindow):
