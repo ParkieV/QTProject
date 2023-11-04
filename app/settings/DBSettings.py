@@ -2,21 +2,22 @@ import os
 import sqlite3
 
 DATABASE_DIR = os.getcwd() + "/database/"
+DATABASE_NAME = ''
 
 class DBManager:
 
     @staticmethod
     def db_transactions_query(func):
         def called(*args, **kwargs):
-            with sqlite3.connect(DATABASE_DIR + 'Expenses_database.sqlite') as con:
+            with sqlite3.connect(DATABASE_DIR + 'aaa.sqlite') as con:
                 result = func(con=con, *args, **kwargs)
                 return result
         return called
 
     @staticmethod
-    def check_connection() -> bool:
+    def check_connection(db_path: str) -> bool:
         try:
-            con = sqlite3.connect(DATABASE_DIR + 'Expenses_database.sqlite')
+            con = sqlite3.connect(db_path)
             query = """
                 SELECT 1
                 FROM financial_transactions_test;
@@ -28,7 +29,6 @@ class DBManager:
 
             return True
 
-        except Exception as err:
-            print(err)
+        except Exception:
             return False
 

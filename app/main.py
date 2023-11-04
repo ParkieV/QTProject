@@ -3,7 +3,7 @@ import sys
 
 from PyQt5.QtWidgets import QApplication
 
-from app.UI.DatabaseWindow import DatabaseWindow
+from app.UI.windows.DatabaseWindow import DatabaseWindow
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO,
