@@ -1,7 +1,8 @@
 from PyQt5 import uic
-from PyQt5.QtCore import QRegExp
+from PyQt5.QtCore import QRegExp, QTimer
 from PyQt5.QtWidgets import QLabel, QMainWindow, QPushButton
 
+from app.crud.transactions_crud import delete_row_by_id
 from app.methods.db_queries import get_row_count, get_rows
 from app.settings.UISettings import UI_SRC_DIR
 
@@ -17,7 +18,11 @@ class ExpensesWindow(QMainWindow):
         self.c.clicked.connect(self._next_page)
         self.go_back.clicked.connect(self._prev_page)
         self.comboBox.currentTextChanged.connect(self._update_UI)
+        self.timer = QTimer()
+        self.timer.setInterval(600) # 600мс
+        self.timer.timeout.connect(self._update_UI)
         self._update_UI()
+        self.timer.start()
 
     def _update_UI(self) -> None:
         # Clear window
@@ -100,7 +105,7 @@ class ExpensesWindow(QMainWindow):
 
     def delete_row(self, id: int) -> None:
         print(id)
-        self._update_UI()
+        delete_row_by_id(id)
 
     def _next_page(self):
         row_count = get_row_count()

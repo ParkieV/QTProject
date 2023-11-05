@@ -1,8 +1,13 @@
 import logging
+import os
+import sys
 from datetime import datetime
 
 from PyQt5 import uic
+from PyQt5.QtCore import QTimer
 from PyQt5.QtWidgets import QFileDialog, QMainWindow
+
+sys.path.append(os.getcwd())
 
 from app.crud.transactions_crud import add_row, delete_row_by_id
 from app.methods.db_queries import get_rows, upload_csv, upload_sqlite
@@ -35,9 +40,15 @@ class DatabaseWindow(QMainWindow):
             11: 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30,  # Ноябрь
             12: 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 31  # Декабрь
         }
-        self.del_id = 0
+        self.block_func = False
         self.build_plot()
+        self.timer = QTimer()
+        self.timer.setInterval(100) # 100мс
+        self.timer.timeout.connect(self.last_spends_fun)
+
+
         self._init_ui()
+        self.timer.start()
 
     def _init_ui(self) -> None:
         self.redact_btn_1.hide()
@@ -103,48 +114,48 @@ class DatabaseWindow(QMainWindow):
             self.spnt_lbl_1.setText(str(self.last_spends_transactions[0][1]) + "\t" + str(self.last_spends_transactions[0][2]) + "\t" + str(self.last_spends_transactions[0][3]))
             self.spnt_lbl_1.show()
             self.del_btn_1.show()
-            self.del_btn_1.clicked.connect(self.delete_row_button(self.last_spends_transactions[0][0]))
+            self.del_btn_1.clicked.connect(lambda: self.delete_row_button(self.last_spends_transactions[0][0])) # type: ignore
+
 
         if len(self.last_spends_transactions) >= 2:
             self.spnt_lbl_2.setText(str(self.last_spends_transactions[1][1]) + "\t" + str(self.last_spends_transactions[1][2]) + "\t" + str(self.last_spends_transactions[1][3]))
             self.spnt_lbl_2.show()
             self.del_btn_2.show()
-            self.del_btn_2.clicked.connect(self.delete_row_button(self.last_spends_transactions[1][0]))
+            self.del_btn_2.clicked.connect(lambda: self.delete_row_button(self.last_spends_transactions[1][0]))
 
         if len(self.last_spends_transactions) >= 3:
             self.spnt_lbl_3.setText(str(self.last_spends_transactions[2][1]) + "\t" + str(self.last_spends_transactions[2][2]) + "\t" + str(self.last_spends_transactions[2][3]))
             self.spnt_lbl_3.show()
             self.del_btn_3.show()
-            self.del_btn_3.clicked.connect(self.delete_row_button(self.last_spends_transactions[2][0]))
+            self.del_btn_3.clicked.connect(lambda: self.delete_row_button(self.last_spends_transactions[2][0]))
 
         if len(self.last_spends_transactions) >= 4:
             self.spnt_lbl_4.setText(str(self.last_spends_transactions[3][1]) + "\t" + str(self.last_spends_transactions[3][2]) + "\t" + str(self.last_spends_transactions[3][3]))
             self.spnt_lbl_4.show()
             self.del_btn_4.show()
-            self.del_btn_4.clicked.connect(self.delete_row_button(self.last_spends_transactions[3][0]))
+            self.del_btn_4.clicked.connect(lambda: self.delete_row_button(self.last_spends_transactions[3][0]))
 
         if len(self.last_spends_transactions) >= 5:
             self.spnt_lbl_5.setText(str(self.last_spends_transactions[4][1]) + "\t" + str(self.last_spends_transactions[4][2]) + "\t" + str(self.last_spends_transactions[4][3]))
             self.spnt_lbl_5.show()
             self.del_btn_5.show()
-            self.del_btn_5.clicked.connect(self.delete_row_button(self.last_spends_transactions[4][0]))
+            self.del_btn_5.clicked.connect(lambda: self.delete_row_button(self.last_spends_transactions[4][0]))
 
         if len(self.last_spends_transactions) >= 6:
             self.spnt_lbl_6.setText(str(self.last_spends_transactions[5][1]) + "\t" + str(self.last_spends_transactions[5][2]) + "\t" + str(self.last_spends_transactions[5][3]))
             self.spnt_lbl_6.show()
             self.del_btn_6.show()
-            self.del_btn_6.clicked.connect(self.delete_row_button(self.last_spends_transactions[5][0]))
+            self.del_btn_6.clicked.connect(lambda: self.delete_row_button(self.last_spends_transactions[5][0]))
 
         if len(self.last_spends_transactions) >= 7:
             self.spnt_lbl_7.setText(str(self.last_spends_transactions[6][1]) + "\t" + str(self.last_spends_transactions[6][2]) + "\t" + str(self.last_spends_transactions[6][3]))
             self.spnt_lbl_7.show()
             self.del_btn_7.show()
-            self.del_btn_7.clicked.connect(self.delete_row_button(self.last_spends_transactions[6][0]))
+            self.del_btn_7.clicked.connect(lambda: self.delete_row_button(self.last_spends_transactions[6][0]))
 
-    def delete_row_button(self, id: int) -> None:
+    def delete_row_button(self, id: int,) -> None:
         print(id)
         delete_row_by_id(id)
-        self.last_spends_fun()
 
     def download_btn__fun(self, **kwargs) -> None:
         data = {

@@ -1,8 +1,10 @@
 import logging
+import os
 import sys
 
 from PyQt5.QtWidgets import QApplication
 
+sys.path.append(os.getcwd())
 from app.UI.windows.DatabaseWindow import DatabaseWindow
 
 if __name__ == '__main__':
