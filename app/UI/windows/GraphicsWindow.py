@@ -1,4 +1,5 @@
 
+from datetime import datetime
 from PyQt5 import uic
 from PyQt5.QtWidgets import QMainWindow
 
@@ -32,25 +33,15 @@ class GraphicsWindow(QMainWindow):
         self.build_plot()
 
     def build_plot(self):
-        if data := transpose(get_rows(0)):
-            y_graph_list = data[1]
-            x_date_day = map(lambda x: x[x.rfind('-') + 1:], data[-1])
-            x_date_mon = map(lambda x: x[x.find('-') + 1: x.rfind('-')], data[-1])
-            x_date_year = map(lambda x: x[: x.find('-')], data[-1])
-            print(x_date_day, x_date_mon, x_date_year, sep="\n\n")
+        if data := transpose(get_rows(0, order_date=True)):
+            y_amount_graph_list = data[1]
+            x_date_day = data[-1]
             # self.graph_values - матрица, в которой хранятся два списка:
             # 1-ый содержит количество дней прошедших с начала добавления первого дохода \ расхода
             # 2-ой содержит все расходы введённые пользователь на момент инициализации программы
 
-            print(list(x_date_day))
-            self.graph_values = [[list(x_date_day)[i] +
-                                  self.month_days_from_start_of_year[list(x_date_mon)[i]] +
-                                  (365 * list(x_date_year)[i]) -
-                                  list(x_date_day)[0] +
-                                  self.month_days_from_start_of_year[list(x_date_mon)[0]] +
-                                  (365 * list(x_date_year)[0])
-                                  for i in range(len(list(x_date_day)))],
-                                 list(y_graph_list)
+            self.graph_values = [list(map(lambda x: (datetime.strptime(x, "%Y-%m-%d")-datetime.strptime(x_date_day[0], "%Y-%m-%d")).days, x_date_day)),
+                                 y_amount_graph_list
                                  ]
 
             self.graph_big.clear()

@@ -9,7 +9,7 @@ from app.settings.DBSettings import DBManager
 
 
 @DBManager.db_transactions_query
-def get_rows(limit: int = 30, offset: int = 0, order_create: bool = False, order_date: bool = False, order_amount: bool = False, con: Connection | None = None) -> list[Any]:
+def get_rows(limit: int = 30, offset: int = 0, order_create: bool = False, order_date: bool = False, order_amount: bool = False, desc: bool =False, con: Connection | None = None) -> list[Any]:
     query = f"""
         SELECT transaction_id,
             amount,
@@ -26,6 +26,8 @@ def get_rows(limit: int = 30, offset: int = 0, order_create: bool = False, order
         sort_atributes.append("amount")
     if sort_atributes:
         query += " ORDER BY " + ", ".join(sort_atributes)
+        if desc:
+            query += " DESC"
         logging.info(query)
     if limit != 0:
         query += f"""
@@ -106,7 +108,7 @@ def get_row_count(con: Connection | None = None) -> int:
 def upload_csv(db_path: str) -> None:
     rows = []
     with open(db_path) as f:
-        rows = list(map(lambda x: x.split(';'), f.readlines()))
+        rows = list(map(lambda x: x.split(','), f.readlines()))
         if len(rows[0]) != 5:
             raise AttributeError("Количество аттрибутов не равно 5.")
         if rows[0] != ['transaction_id', 'amount', 'description', 'created_at', 'transaction_date']:
