@@ -16,16 +16,22 @@
     <height>630</height>
    </size>
   </property>
+  <property name="maximumSize">
+   <size>
+    <width>1120</width>
+    <height>630</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <widget class="Line" name="line">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>120</y>
+     <x>10</x>
+     <y>110</y>
      <width>20</width>
-     <height>421</height>
+     <height>391</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -40,8 +46,8 @@
   <widget class="QLabel" name="enter_exel">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>60</y>
+     <x>60</x>
+     <y>50</y>
      <width>411</width>
      <height>31</height>
     </rect>
@@ -59,10 +65,10 @@
   <widget class="Line" name="line_2">
    <property name="geometry">
     <rect>
-     <x>400</x>
+     <x>370</x>
      <y>110</y>
      <width>20</width>
-     <height>421</height>
+     <height>391</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -77,10 +83,10 @@
   <widget class="Line" name="line_3">
    <property name="geometry">
     <rect>
-     <x>760</x>
-     <y>100</y>
+     <x>730</x>
+     <y>110</y>
      <width>20</width>
-     <height>421</height>
+     <height>391</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -116,7 +122,7 @@ QPushButton:pressed {
     <string>вернуться</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="go_front">
+  <widget class="QPushButton" name="c">
    <property name="geometry">
     <rect>
      <x>910</x>
@@ -167,7 +173,7 @@ QPushButton:pressed {
   <widget class="QLabel" name="enter_exel_2">
    <property name="geometry">
     <rect>
-     <x>450</x>
+     <x>700</x>
      <y>50</y>
      <width>181</width>
      <height>31</height>
@@ -186,7 +192,7 @@ QPushButton:pressed {
   <widget class="QComboBox" name="comboBox">
    <property name="geometry">
     <rect>
-     <x>640</x>
+     <x>890</x>
      <y>50</y>
      <width>201</width>
      <height>31</height>
@@ -210,6 +216,2844 @@ QPushButton:pressed {
      <string>Сумме дохода</string>
     </property>
    </item>
+  </widget>
+  <widget class="Line" name="line_4">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>110</y>
+     <width>20</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">Line{
+	color: rgb(65, 74, 76);
+}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>110</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>110</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_2">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>150</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>150</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_3">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>190</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_4">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>230</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>190</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>230</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_5">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>270</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_8">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>390</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_6">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>310</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_5">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>270</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_8">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>390</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_7">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>350</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_6">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>310</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_7">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>350</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_10">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>470</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_9">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>430</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_10">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>470</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_9">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>430</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_11">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>110</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_12">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>150</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_13">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>190</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_14">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>230</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_15">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>270</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_16">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>310</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_17">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>350</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_18">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>390</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_19">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>430</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_20">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>470</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_21">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>110</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_22">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>150</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_11">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>110</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_12">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>150</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_13">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>190</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_14">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>230</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_15">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>270</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_16">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>310</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_17">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>350</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_18">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>390</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_19">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>430</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_20">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>470</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_23">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>190</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_24">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>230</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_25">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>270</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_26">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>310</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_27">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>350</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_28">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>390</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_29">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>430</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spnt_lbl_30">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>470</y>
+     <width>289</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>289</width>
+     <height>28</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_21">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>110</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_22">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>150</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_23">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>190</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_24">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>230</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_25">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>270</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_26">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>310</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_27">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>350</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_28">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>390</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_29">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>430</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn_30">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>470</y>
+     <width>21</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>22</width>
+     <height>29</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 16px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;del_btn_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;450&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;19&lt;/width&gt;
+     &lt;height&gt;19&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QPushButton{
+	background-color: rgb(242, 71, 38);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 10px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;🗑&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+                            </string>
+   </property>
+   <property name="text">
+    <string>🗑</string>
+   </property>
   </widget>
  </widget>
  <resources/>

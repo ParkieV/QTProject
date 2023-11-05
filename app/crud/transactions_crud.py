@@ -1,6 +1,7 @@
 import logging
 import os
 import sys
+from random import randint
 from sqlite3 import Connection
 
 sys.path.append(os.getcwd())
@@ -8,7 +9,7 @@ sys.path.append(os.getcwd())
 from app.methods.validate_query import validate_query_values
 from app.settings.DBSettings import DBManager
 
-TABLE_NAME = "financial_transactions"
+TABLE_NAME = "financial_transactions_test"
 
 @DBManager.db_transactions_query
 @validate_query_values
@@ -73,10 +74,9 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO,
                         filename="app/db_log.log", filemode="w",
                         format="%(asctime)s %(levelname)s\t%(message)s")
-    add_row(values={"amount": 100,
-        "transaction_date": "2021-11-30"})
-    print(get_row_by_id(10))
-    update_row_by_id(values={"amount": 101}, id=10)
-    print(get_row_by_id(10))
-    delete_row_by_id(10)
-
+    for i in range(58):
+        x = str(randint(1, 12))
+        y = str(randint(1, 28))
+        add_row(values={"amount": randint(1, 1000),
+            "transaction_date": f"2021-{'0'*(2-len(x))+x}-{'0'*(2-len(y))+y}"})
+    print("Finish!")
