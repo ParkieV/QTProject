@@ -44,7 +44,7 @@
    <property name="geometry">
     <rect>
      <x>480</x>
-     <y>540</y>
+     <y>570</y>
      <width>191</width>
      <height>21</height>
     </rect>
@@ -62,6 +62,30 @@ QPushButton:pressed {
    </property>
    <property name="text">
     <string>вернуться</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="go_back_btn_graph_2">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>530</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(52, 59, 41);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-size: 17px;
+}
+QPushButton:pressed {
+	background-color: rgb(39, 45, 30);
+}</string>
+   </property>
+   <property name="text">
+    <string>обновить</string>
    </property>
   </widget>
  </widget>
