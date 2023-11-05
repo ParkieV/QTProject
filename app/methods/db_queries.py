@@ -90,6 +90,19 @@ def get_negative_amounts_by_date(order_date: bool = False, con: Connection | Non
         raise ConnectionError("Connection to database was failed")
 
 
+@DBManager.db_transactions_query
+def get_row_count(con: Connection | None = None) -> int:
+    query = f"""
+        SELECT COUNT(transaction_id)
+        FROM {TABLE_NAME}
+    """
+
+    if con:
+        result = con.execute(query).fetchone()[0]
+        return result
+    else:
+        raise ConnectionError("Connection to database was failed")
+
 def upload_csv(db_path: str) -> None:
     rows = []
     with open(db_path) as f:

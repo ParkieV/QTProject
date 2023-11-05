@@ -183,9 +183,7 @@ class DatabaseWindow(QMainWindow):
         self.last_spends_fun()
 
     def all_spents_btn_fun(self) -> None:
-        self.hide()
-        if not self.expenses_window.show():
-            self.show()
+        self.expenses_window.show()
 
     def all_graph_btn_fun(self) -> None:
         self.graphics_window.show()

@@ -1,9 +1,9 @@
-import sqlite3
 
 from PyQt5 import uic
 from PyQt5.QtWidgets import QMainWindow
 
-from app.settings.DBSettings import DATABASE_DIR
+from app.methods.db_queries import get_rows
+from app.methods.matrix_tools import transpose
 from app.settings.UISettings import UI_SRC_DIR
 
 
@@ -32,28 +32,29 @@ class GraphicsWindow(QMainWindow):
         self.build_plot()
 
     def build_plot(self):
-        con = sqlite3.connect(DATABASE_DIR + 'Expenses_database.sqlite')
-        cur = con.cursor()
+        if data := transpose(get_rows(0)):
+            y_graph_list = data[1]
+            x_date_day = map(lambda x: x[x.rfind('-') + 1:], data[-1])
+            x_date_mon = map(lambda x: x[x.find('-') + 1: x.rfind('-')], data[-1])
+            x_date_year = map(lambda x: x[: x.find('-')], data[-1])
+            print(x_date_day, x_date_mon, x_date_year, sep="\n\n")
+            # self.graph_values - матрица, в которой хранятся два списка:
+            # 1-ый содержит количество дней прошедших с начала добавления первого дохода \ расхода
+            # 2-ой содержит все расходы введённые пользователь на момент инициализации программы
 
-        y_graph_list = list(map(lambda a: a[0], list(cur.execute("""SELECT * FROM expnstable;"""))))
-        x_date_day = list(map(lambda a: a[2], list(cur.execute("""SELECT * FROM expnstable;"""))))
-        x_date_mon = list(map(lambda a: a[3], list(cur.execute("""SELECT * FROM expnstable;"""))))
-        x_date_year = list(map(lambda a: a[4], list(cur.execute("""SELECT * FROM expnstable;"""))))
+            print(list(x_date_day))
+            self.graph_values = [[list(x_date_day)[i] +
+                                  self.month_days_from_start_of_year[list(x_date_mon)[i]] +
+                                  (365 * list(x_date_year)[i]) -
+                                  list(x_date_day)[0] +
+                                  self.month_days_from_start_of_year[list(x_date_mon)[0]] +
+                                  (365 * list(x_date_year)[0])
+                                  for i in range(len(list(x_date_day)))],
+                                 list(y_graph_list)
+                                 ]
 
-        # self.graph_values - матрица, в которой хранятся два списка:
-        # 1-ый содержит количество дней прошедших с начала добавления первого дохода & расхода
-        # 2-ой содержит все расходы введённые пользователь на момент инициализации программы
-
-        self.graph_values = [[int(list(x_date_day)[i]) - int(list(x_date_day)[0]) +
-                              (self.month_days_from_start_of_year[int(list(x_date_mon)[i])])
-                              - self.month_days_from_start_of_year[int(list(x_date_mon)[0])] +
-                              (365 * (int(list(x_date_year)[i]) - int(list(x_date_year)[0])))
-                              for i in range(len(list(x_date_day)))],
-                             [sum(list(y_graph_list)[:j]) for j in range(len(list(y_graph_list)))]
-                             ]
-        self.graph_big.clear()
-        self.graph_big.plot(self.graph_values[0], self.graph_values[1])
-        con.close()
+            self.graph_big.clear()
+            self.graph_big.plot(self.graph_values[0], self.graph_values[1])
 
     def go_back_btn_fun(self) -> None:
         self.build_plot()
