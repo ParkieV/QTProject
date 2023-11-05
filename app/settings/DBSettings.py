@@ -9,7 +9,7 @@ class DBManager:
     @staticmethod
     def db_transactions_query(func):
         def called(*args, **kwargs):
-            with sqlite3.connect(DATABASE_DIR + 'aaa.sqlite') as con:
+            with sqlite3.connect(DATABASE_DIR + 'Expenses_database.sqlite') as con:
                 result = func(con=con, *args, **kwargs)
                 return result
         return called
@@ -20,7 +20,7 @@ class DBManager:
             con = sqlite3.connect(db_path)
             query = """
                 SELECT 1
-                FROM financial_transactions_test;
+                FROM financial_transactions;
             """
 
             con.execute(query)
